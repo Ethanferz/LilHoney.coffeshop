@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Coffee Concept - Mockup</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for High-End Typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,400&viewport=width=device-width" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. HERO HEADER SECTION -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <span class="hero-tagline">[ PREMIUM SPECIALTY COFFEE ]</span>
+            <h1>Crafted Espresso, Creamy Cold Foam &amp; Modern Pastries</h1>
+            <p>A boutique neighborhood coffee bar bringing unique, curated flavor profiles to the heart of the community.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#location" class="btn btn-secondary">Get Directions</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HIGH-VISIBILITY ESSENTIALS BAR -->
+    <section class="essentials-bar">
+        <div class="essential-item">
+            <strong>OUR HOURS</strong>
+            <p>Tue – Sat: 10:00 AM – 3:00 PM | Sun &amp; Mon: Closed</p>
+        </div>
+        <div class="essential-item">
+            <strong>FIND US</strong>
+            <p>35 Godwin Ave, Ridgewood, NJ (Across from Whole Foods)</p>
+        </div>
+    </section>
+
+    <!-- 3. THE MENU EXO-SKELETON -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Curated Menu</h2>
+        <p class="section-subtitle">Carefully sourced ingredients, balanced aesthetics, and distinct seasonal flavors.</p>
+        
+        <div class="menu-grid">
+            <!-- Category 1 -->
+            <div class="menu-category">
+                <h3>Signature Espresso</h3>
+                <div class="menu-item">
+                    <div class="item-header"><strong>Signature Honey Latte</strong> <span>$X.XX</span></div>
+                    <p>[ Short description of beverage ingredients, flavor profile, and preparation style ]</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header"><strong>Black Sesame Latte</strong> <span>$X.XX</span></div>
+                    <p>[ Short description of beverage ingredients, flavor profile, and preparation style ]</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header"><strong>Honey Tahini Cold Brew</strong> <span>$X.XX</span></div>
+                    <p>[ Short description of beverage ingredients, flavor profile, and preparation style ]</p>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="menu-category">
+                <h3>Matcha &amp; Botanicals</h3>
+                <div class="menu-item">
+                    <div class="item-header"><strong>Strawberry Matcha Latte</strong> <span>$X.XX</span></div>
+                    <p>[ Short description of beverage ingredients, flavor profile, and preparation style ]</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header"><strong>Sweet Cream Matcha</strong> <span>$X.XX</span></div>
+                    <p>[ Short description of beverage ingredients, flavor profile, and preparation style ]</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header"><strong>Artisanal Daily Pastry</strong> <span>$X.XX</span></div>
+                    <p>[ Short description of beverage ingredients, flavor profile, and preparation style ]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. THE STORY & CO-BRANDING SECTION -->
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-image-placeholder">
+                <span>[ High-Resolution Brand Imagery Placeholder ]</span>
+            </div>
+            <div class="story-text">
+                <h2 class="section-title">Our Concept</h2>
+                <p>Designed for flavor explorers, this boutique space focuses on high-quality specialized drink profiles and artisanal goods. As an intentional neighborhood extension of our core brand layout, we bridge fast community convenience with elevated culinary execution.</p>
+                <p>Every pour, foam, and pairing is built to add a sweet, curated moment to your daily routine.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. INSTAGRAM LINK FOOTER -->
+    <footer id="location" class="site-footer">
+        <p>© 2026 Boutique Coffee Concept. All Rights Reserved.</p>
+        <p>Keep up with daily updates on Instagram <a href="#" class="footer-link">@lilhoney.coffeeshop</a></p>
+        <div class="footer-badge">Sister Concept to Honey Day Cafe</div>
+    </footer>
+
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-cream: #FDFBF7;
+    --card-cream: #F7F3EB;
+    --text-charcoal: #2B2B2B;
+    --accent-gold: #D4AF37;
+    --muted-gray: #7A7A7A;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-cream);
+    color: var(--text-charcoal);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(247, 243, 235, 0.8), rgba(253, 251, 247, 1));
+    border-bottom: 1px solid #EFEAE0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-tagline {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.hero-section h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: var(--muted-gray);
+    margin-bottom: 35px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--text-charcoal);
+    color: #FFF;
+}
+
+.btn-primary:hover {
+    background-color: #404040;
+}
+
+.btn-secondary {
+    border: 1px solid var(--text-charcoal);
+    color: var(--text-charcoal);
+}
+
+.btn-secondary:hover {
+    background-color: var(--card-cream);
+}
+
+/* ESSENTIALS BAR */
+.essentials-bar {
+    background-color: var(--card-cream);
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 20px;
+    border-top: 1px solid #EFEAE0;
+    border-bottom: 1px solid #EFEAE0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.essential-item {
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.essential-item strong {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--accent-gold);
+}
+
+.essential-item p {
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* MENU SECTION */
+.menu-section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--muted-gray);
+    margin: 10px 0 50px 0;
+    font-style: italic;
+}
+
+.menu-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.menu-category {
+    flex: 1;
+    min-width: 300px;
+}
+
+.menu-category h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--accent-gold);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.menu-item {
+    margin-bottom: 25px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: var(--muted-gray);
+}
+
+/* STORY SECTION */
+.story-section {
+    background-color: var(--card-cream);
+    padding: 80px 20px;
+}
+
+.story-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.story-image-placeholder {
+    flex: 1;
+    min-width: 300px;
+    height: 350px;
+    background-color: #EFEAE0;
+    border: 1px dashed var(--accent-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted-gray);
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.story-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.story-text .section-title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    margin-bottom: 15px;
+    color: #4A4A4A;
+}
+
+/* FOOTER */
+.site-footer {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--text-charcoal);
+    color: #EFEAE0;
+    font-size: 0.9rem;
+}
+
+.site-footer p {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-badge {
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid var(--accent-gold);
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero-section h1 { font-size: 2rem; }
+    .hero-buttons { flex-direction: column; }
+    .menu-grid { gap: 30px; }
+    .story-container { flex-direction: column-reverse; gap: 30px; }
+  
